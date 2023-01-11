@@ -1,0 +1,35 @@
+@import "style/variables.scss";
+@import "style/resolution.scss";
+@import "style/navigation.scss";
+@import "style/hero.scss";
+@import "style/cta.scss";
+@import "style/sponsors.scss";
+@import "style/auction.scss";
+@import "style/launch.scss";
+@import "style/footer.scss";
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    max-width: 1344px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Inter', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+

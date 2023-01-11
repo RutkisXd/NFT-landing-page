@@ -1,0 +1,99 @@
+.auction-container {
+    .auction-wrapper {
+        margin: 0 32px 110px;
+        @include m {
+            margin: 0 32px 70px;
+        }
+
+        .auction-header-wrapper{
+            margin-bottom: 50px;
+            .auction-header {
+                font-size: 40px;
+                margin-bottom: $margin-medium;
+            }
+            .auction-text {
+                font-size: 20px;
+                color: $dark-grey-color;
+                a.auction-link {
+                    color: $dark-grey-color;
+                }
+            }
+        }
+        .card-wrapper {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            overflow: hidden;
+            .card-item a {
+                width: 290px;
+                text-decoration: none;
+                .item-photo-wrapper {
+                    display: flex;
+                    img {
+                        object-fit: cover;
+                    }
+                }
+                .item-description-wrapper {
+                    background-color: #EEEEEE;
+                    padding: $margin-medium;
+                    border-radius: 0 0 16px 16px;
+
+                    .item-description {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 12px;
+
+                        .first-line {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+
+                            .left {
+                                color: #FF8139;
+                                text-transform: uppercase;
+                                font-size: 12px;
+                                font-weight: 500;
+                            }
+                            .right {
+                                color: $grey-color;
+                                text-transform: uppercase;
+                                font-size: 12px;
+                                font-weight: 500;
+                            }
+                        }
+
+                        .second-line {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+
+                            .left, .right {
+                                color: #111111;
+                                font-size: 20px;
+                                font-weight: 500;
+                            }
+                        }
+                        
+                        .third-line {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+
+                            .left, .right {
+                                color: $grey-color;
+                                font-size: 18px;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                }
+            }
+            .card-item a:hover {
+                .item-description-wrapper {
+                    background-color: #ffdfb0;
+                }
+            }
+            
+        }
+    }
+}

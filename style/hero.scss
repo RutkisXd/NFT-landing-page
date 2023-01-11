@@ -1,0 +1,137 @@
+.hero-box-container {
+    .hero-box-wrapper {
+        display: grid;
+        grid-template-columns: 50% 45%;
+        gap: 5%;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 180px;
+        max-width: 1120px;
+        padding: 0 0 0 32px;
+        position: relative;
+        @include xxl {
+            padding-top: 110px;
+        }
+        @include xl {
+            padding-top: 70px;
+        }
+        @include l {
+            padding-top: 50px;
+        }
+        @include m {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+        @include s {
+            padding-top: 80px;
+            padding-bottom: 80px;
+            grid-template-columns: 1fr;
+            overflow: hidden;
+        }
+        .hero-box-content-wrapper {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            @include s {
+                width: 70%;
+            }
+            .hero-box-news-title {
+                color: #FF3998;
+                text-transform: uppercase;
+                font-weight: 700;
+                @include xl {
+                    font-size: 16px;
+                }
+                @include l {
+                    font-size: 14px;
+                }
+                @include s {
+                    font-size: 13px;
+                }
+            }
+            .hero-box-header {
+                font-size: 96px;
+                margin-top: $margin-medium;
+                margin-bottom: 32px;
+                @include xxl {
+                    font-size: 80px;
+                }
+                @include xl {
+                    font-size: 60px;
+                }
+                @include l {
+                    font-size: 50px;
+                }
+                @include m {
+                    font-size: 48px;
+                }
+                @include s {
+                    font-size: 42px;
+                    margin-bottom: 24px;
+                }
+            }
+            .hero-box-text {
+                color: $dark-grey-color;
+                font-size: 20px;
+                margin-bottom: 41px;
+                @include xxl {
+                    font-size: 18px;
+                }
+                @include xl {
+                    font-size: 16px;
+                }
+                @include l {
+                    font-size: 15px;
+                }
+                @include s {
+                    font-size: 14px;
+                    margin-bottom: 32px;
+                }
+            }
+            .gradient {
+                background: linear-gradient(45deg, rgba(255,57,152,1) 28%, rgba(255,57,57,1) 42%, rgba(255,129,57,1) 61%, rgba(255,129,57,1) 81%, rgba(57,255,160,1) 100%);
+                border-radius: 50px;
+                padding: 20px 5px;
+                width: 151px;
+                a.hero-box-button {
+                text-decoration: none;
+                color: black;
+                font-weight: 600;
+                padding: 1rem 2.5rem;
+                border-radius: 50px;
+                background-color: white;
+                width: 100%;
+                }
+                a:hover {
+                    background: linear-gradient(45deg, rgba(255,57,152,1) 28%, rgba(255,57,57,1) 42%, rgba(255,129,57,1) 61%, rgba(255,129,57,1) 81%, rgba(57,255,160,1) 100%);
+                    color: white;
+                }
+            } 
+        }
+        .hero-box-image-wrapper {
+            @include xxl {
+                overflow: hidden;
+            }
+            @include s {
+                position: absolute;
+                right: -40%; top: -5%;
+            }
+            
+            .hero-image {
+                object-fit: contain;
+                @include xl {
+                    width: 600px;
+                }
+                @include l {
+                    width: 560px;
+                }
+                @include m {
+                    width: 450px;   
+                }
+                @include s {
+                    width: 400px;   
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+.sponsors-container {
+    .sponsors-wrapper {
+        .partners-wrapper {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin: 0 32px 120px;
+            .partner a {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                text-decoration: none;
+                .partner-name {
+                    color: #999999;
+                    font-weight: 400;
+                    font-size: 30px;
+                }
+                .name-1 {
+                    color: #999999;
+                    font-weight: 400;
+                    font-size: 30px;
+                    @include m {
+                        display: none;
+                    }
+                }
+                .name-2 {
+                    color: #999999;
+                    font-weight: 400;
+                    font-size: 30px;
+                    display: none;
+                    @include m {
+                        display: inline;
+                    }
+                }
+            }
+            .partner-3 {
+                @include s {
+                    display: none;
+                }
+            }
+        }
+    }
+}

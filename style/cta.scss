@@ -1,0 +1,28 @@
+.cta-container {
+    .cta-wrapper {
+        a {
+            text-decoration: none;
+            color: #111111;
+        }
+        .cta-content-wrapper {
+            background: linear-gradient(45deg, rgba(255,57,152,1) 28%, rgba(255,57,57,1) 42%, rgba(255,129,57,1) 61%, rgba(255,129,57,1) 81%, rgba(57,255,160,1) 100%);
+            padding: 154px 64px 64px;
+            margin: 0 32px 120px;
+            border-radius: 20px;
+            @include xl {
+                border-radius: 0;
+                margin: 0 0 120px;
+            }
+            @include s {
+                padding: 32px 32px;
+            }
+            .cta-header {
+                font-size: 40px;
+                margin-bottom: $margin-medium;
+            }
+            .cta-text {
+                font-size: 20px;
+            }
+        }
+    }
+}

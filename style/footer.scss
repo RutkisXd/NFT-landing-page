@@ -1,0 +1,120 @@
+.footer-container {
+    .footer-wrapper {
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        max-width: 1344px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px;
+        margin-bottom: 71px;
+        padding: 0 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 120px;
+        @include m {
+            gap: 60px;
+        }
+        
+        .footer-top-wrapper {
+            display: flex;
+            gap: 123px;
+            justify-content: space-between;
+            @include xl {
+                flex-direction: column;
+            }
+            @include m {
+                gap: 60px;
+
+            }
+            .footer-left-top {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                .logo-wrapper {
+                    display: flex;
+                    align-items: flex-end;
+                    gap: 12px;
+                    .logo-text svg {
+                        stroke: black;
+                        stroke-width: 2px;
+                    }
+                }
+                .text {
+                    font-size: 16px;
+                    color: $dark-grey-color;
+                }
+                .icons-wrapper {
+                    display: flex;
+                    gap: 16px;
+                    a {
+                        fill: #999999;
+                        cursor: pointer;
+                    }
+                }
+            }    
+            .footer-right-top {
+                display: flex;
+                gap: 106px;
+                @include xl {
+                    column-gap: 120px;
+                    row-gap: 20px;
+                    justify-content: space-around;
+                }
+                @include m {
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                }
+                .list {
+                    width: 90px;
+                    .list-name {
+                        text-transform: uppercase;
+                        font-size: 16px;
+                        font-weight: 700;
+                        color: $dark-grey-color;
+                    }
+                    ul {
+                        padding-left: 0;
+                        margin-bottom: 28px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 8px;
+                        li.list-item {
+                         list-style-type: none;
+                            a {
+                                text-decoration: none;
+                                color: $dark-grey-color;
+                                text-transform: capitalize;
+                                font-weight: 400;
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }    
+        .footer-bottom-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .footer-left-bottom {
+                color: #999999;
+                font-size: 16px;
+            }
+            .footer-right-bottom {
+                color: #999999;
+                font-size: 16px;
+                display: flex;
+                justify-content: flex-end;
+                @include l {
+                    display: none;
+                }
+            }
+        }
+        .footer-right-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 123px; 
+        }
+    }
+}
